@@ -1,0 +1,12 @@
+.site-project-item {
+    /* Add styles for the project item box */
+    width: 100%; /* Ensure each item takes up the full width of its container */
+    max-width: 300px; /* Set a maximum width for each item */
+    margin-bottom: 20px; /* Adjust margin as needed */
+  }
+  
+  .site-project-item-thumb img {
+    /* Add styles for the project item image */
+    width: 100%; /* Ensure the image fills its container */
+    height: auto; /* Maintain aspect ratio */
+  }

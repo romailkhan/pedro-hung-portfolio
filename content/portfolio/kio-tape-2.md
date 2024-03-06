@@ -1,10 +1,10 @@
 ---
-title: "KIO-TAPE BRAND"
+title: "TIMEX"
 date: 2019-12-23T20:56:42+06:00
 type: portfolio
-image: "images/projects/project-thumb-four.jpg"
-category: ["PRODUCT LABEL"]
-project_images: ["images/projects/project-details-image-one.jpg", "images/projects/project-details-image-two.jpg"]
+image: "images/projects/timex-watch-pink.png"
+category: ["REBRAND"]
+project_images: ["images/projects/timex-watch-orange.png", "images/projects/timex-fullsize.png", "images/projects/timex-gowithit.png"]
 ---
 
 The “Seamless Watch” watch has all the features that users expect in a digital watch, and some unusual features.

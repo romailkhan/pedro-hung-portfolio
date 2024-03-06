@@ -1,0 +1,58 @@
+.site-project-item {
+  /* Add styles for the project item box */
+  width: 100%; /* Set width for each item to cover 1/4 of the container, accounting for margin */
+  margin-right: 20px; /* Add margin between items */
+  margin-bottom: 20px; /* Adjust margin as needed */
+  float: left; /* Float items to create a grid layout */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+@media (max-width: 767.98px) {
+  .site-project-item {
+    width: 100%; /* Set width to cover full width on smaller screens */
+    margin-right: 0; /* Remove margin for single column layout */
+    float: none; /* Remove float for single column layout */
+  }
+}
+  
+  .linkedin-button {
+    background-color: #eaa4a4; /* LinkedIn blue color */
+    color: white; /* Text color */
+    padding: 12px; /* Adjust padding to center the logo */
+    border-radius: 50%; /* Make the button circular */
+    display: flex; /* Use flexbox to center the content vertically and horizontally */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+    width: 40px; /* Set fixed width */
+    height: 40px; /* Set fixed height */
+}
+
+.linkedin-button:hover {
+    background-color: #d58f8f; /* Darker shade on hover */
+    color: white;
+}
+
+.linkedin-button img {
+    width: 24px; /* Adjust logo size */
+    height: 24px; /* Adjust logo size */
+    filter: brightness(100%); /* Ensure the logo brightness remains unchanged on button hover */
+}
+
+@media (max-width: 991.98px) {
+    .linkedin-wrapper {
+      display: none; /* Remove margin on smaller screens */
+    }
+}
+
+.linkedin-wrapper {
+  padding-right: 12px; /* Add padding to the right of the LinkedIn button */
+}
+
+.nav-link {
+  transition: transform 0.3s ease; /* Smooth transition on hover */
+}
+
+.nav-link:hover {
+  transform: scale(1.1); /* Scale the link on hover */
+}
