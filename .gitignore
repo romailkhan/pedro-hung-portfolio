@@ -26,11 +26,14 @@ credentials.json
 *.so
 *.dylib
 
-# Ignore package-lock.json for npm
+# Ignore hugo lock files
 .hugo_build.lock
 
-# Ignore yarn.lock for Yarn
-yarn.lock
+# Don't import public directory
+public/
+
+#Dont upload static directory
+static/
 
 # Ignore .DS_Store files on macOS
 .DS_Store
