@@ -30,10 +30,10 @@ credentials.json
 .hugo_build.lock
 
 # Don't import public directory
-public/
+public/*
 
 #Dont upload static directory
-static/
+static/*
 
 # Ignore .DS_Store files on macOS
 .DS_Store
