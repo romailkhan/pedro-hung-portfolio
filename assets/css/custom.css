@@ -3,6 +3,11 @@ body {
   margin: 5px;
 }
 
+.nav-button
+{
+  color: black;
+}
+
 .site-project-item {
   /* Add styles for the project item box */
   width: 100%; /* Set width for each item to cover 1/4 of the container, accounting for margin */
@@ -73,7 +78,7 @@ body {
 }
   
   .linkedin-button {
-    background-color: #eaa4a4; /* LinkedIn blue color */
+    background-color: #3b3b3b; /* LinkedIn blue color */
     color: white; /* Text color */
     padding: 12px; /* Adjust padding to center the logo */
     border-radius: 50%; /* Make the button circular */
@@ -86,7 +91,7 @@ body {
 }
 
 .linkedin-button:hover {
-    background-color: #d58f8f; /* Darker shade on hover */
+  background-color: rgba(0, 0, 0, 0.8); /* Darker shade on hover */
     color: white;
 }
 
@@ -101,7 +106,7 @@ body {
 }
 
 .behance-button {
-  background-color: #eaa4a4; /* LinkedIn blue color */
+  background-color: #3b3b3b; /* LinkedIn blue color */
     color: white; /* Text color */
     padding: 12px; /* Adjust padding to center the logo */
     border-radius: 50%; /* Make the button circular */
@@ -115,7 +120,7 @@ body {
 }
 
 .behance-button:hover {
-    background-color: #d58f8f; /* Darker shade on hover */
+  background-color: rgba(0, 0, 0, 0.8); /* Darker shade on hover */
     color: white;
 }
 
@@ -147,7 +152,7 @@ footer {
 /* ABOUT PAGE */
 
 .about-content {
-   margin-top: 100px;
+   margin-top: 50px;
 }
 
 .container {
@@ -171,14 +176,20 @@ footer {
 }
 
 .about-paragraph {
-  margin-top: 200px;
+  margin-top: 150px;
+  margin-bottom: 150px;
   width: 50%;
   padding: 0 20px;
 }
 
 .about-paragraph p {
-  font-size: 16px;
+  font-size: 19px;
   line-height: 2.0;
+  color: black;
+}
+
+.about-subheading p
+{
   color: black;
 }
 
@@ -241,15 +252,121 @@ footer {
   cursor: default;
 }
 
-/* .miami:hover
-{color:rgba(0,0,0,0);
-  cursor: default;
-  
-} */
-
 @keyframes rainbow { 
   0%{background-position:left}
   50%{background-position:right}
   100%{background-position:left}
 }
 
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Change flex direction to column for mobile */
+    align-items: center; /* Center items vertically in mobile */
+    text-align: center; /* Center text */
+  }
+
+  .about-content {
+    margin-top: 75px;
+  }
+
+  .about-content h1 {
+    margin-bottom: 10px;
+  }
+
+  .about-paragraph {
+    margin-top: 20px;
+    text-align: left;
+  }
+
+  .about-content h1 {
+    font-size: 36px; /* Reduce font size for mobile */
+  }
+
+  .about-content h2 {
+    font-size: 18px; /* Reduce font size for mobile */
+  }
+
+  .about-paragraph p {
+    font-size: 14px; /* Reduce font size for mobile */
+
+  }
+}
+
+.contact-button,
+.contact-submit-button {
+  color: #fff; /* Text color */
+  background-color: #3b3b3b; /* Background color */
+  border-radius: 20px; /* Adjust border radius */
+  padding: 8px 20px; /* Adjust padding */
+  font-size: 14px; /* Font size */
+  font-weight: bold; /* Font weight */
+  text-decoration: none; /* Remove underline */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.contact-button:hover,
+.contact-submit-button:hover {
+  background-color: rgba(0, 0, 0, 0.8); /* Darker shade on hover */
+  color: #fff; /* Text color */
+}
+
+.contact-button:focus-visible,
+.contact-submit-button:focus-visible {
+  outline: 2px solid Highlight;
+  outline-offset: 3px;
+}
+
+.btn
+{
+  background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+/* FOOTER */
+.site-footer {
+  background-color: #3b3b3b; /* Set background color */
+}
+
+.site-footer-copyright p {
+  margin: 0; /* Remove default margin */
+  font-size: 16px; /* Adjust font size as needed */
+  color: white; /* Set text color */
+}
+
+.site-footer-copyright a {
+  color: #e83e8c; /* Set link color */
+  text-decoration: none; /* Remove default underline */
+  transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+.site-footer-copyright a:hover {
+  color: #c22e6e; /* Change link color on hover */
+}
+
+@media (max-width: 768px) {
+  .site-footer {
+      padding: 20px 0; /* Adjust padding for smaller screens */
+  }
+
+  .site-footer-copyright p {
+      font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  .site-footer-copyright p a 
+  {
+    font-size: 14px;
+  }
+}
+
+.util-focus-visible:focus-visible
+{
+  outline: 2px solid Highlight !important;
+  outline-offset: 3px;
+}
+
+.icon-bar {
+  background-color: #3b3b3b !important;
+}
+
+.navbar-toggler:hover .icon-bar {
+  background-color: rgba(0, 0, 0, 0.8);
+}
