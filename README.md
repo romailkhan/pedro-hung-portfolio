@@ -1,6 +1,10 @@
 # Hugo Portfolio Website
 
-This is a portfolio website built using Hugo, showcasing projects, skills, and experiences of Pedro Hung. Built by Romail Khan using Roxo Theme for Hugo.
+This is a portfolio website built using Hugo, showcasing projects, skills, and experiences of Pedro Hung. Built by Romail Khan using the Hugo Framework and Modified Roxo Theme.
+
+Deployed at: [pedrohung.com](https://pedrohung.com) using Netlify.
+
+Netlify Status: TBD
 
 ## Table of Contents
 

@@ -1,3 +1,8 @@
+body {
+  background-color: #f8f9fa; /* Set a light background color */
+  margin: 5px;
+}
+
 .site-project-item {
   /* Add styles for the project item box */
   width: 100%; /* Set width for each item to cover 1/4 of the container, accounting for margin */
@@ -5,6 +10,58 @@
   margin-bottom: 20px; /* Adjust margin as needed */
   float: left; /* Float items to create a grid layout */
   box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  transition: box-shadow 0.3s ease, transform 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+.site-project-item:hover {
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+  transform: scale(1.02); /* Scale up the item on hover */
+}
+
+.site-project-item-thumb {
+  position: relative; /* Ensure the overlay is positioned relative to the container */
+  overflow: hidden; /* Hide any overflowing content */
+}
+
+.site-project-item-thumb img {
+  width: 100%; /* Ensure the image fills the entire width of its container */
+  height: auto; /* Maintain the aspect ratio of the image */
+}
+
+.site-project-item-content a .fas {
+  font-size: 0.8em; /* Adjust the font size of the arrow icon */
+  margin-left: 5px; /* Add some space between the text and the icon */
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Overlay background color */
+  opacity: 0; /* Initially hide the overlay */
+  transition: opacity 0.5s cubic-bezier(0.23, 1, 0.32, 1); /* Smooth transition for overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.site-project-item-thumb:hover .overlay {
+  opacity: 1; /* Show the overlay on hover */
+}
+
+.site-project-item-content {
+  text-align: center; /* Center the content */
+  color: #fff; /* Text color */
+}
+
+.site-project-item-content a {
+  display: inline-flex; /* Use inline-flex to only occupy the space required by the content */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  text-align: center; /* Center the text horizontally */
+  width: 100%; /* Ensure the link takes up the full width of its container */
 }
 
 @media (max-width: 767.98px) {
@@ -33,12 +90,6 @@
     color: white;
 }
 
-.linkedin-button img {
-    width: 24px; /* Adjust logo size */
-    height: 24px; /* Adjust logo size */
-    filter: brightness(100%); /* Ensure the logo brightness remains unchanged on button hover */
-}
-
 @media (max-width: 991.98px) {
     .linkedin-wrapper {
       display: none; /* Remove margin on smaller screens */
@@ -49,6 +100,32 @@
   padding-right: 12px; /* Add padding to the right of the LinkedIn button */
 }
 
+.behance-button {
+  background-color: #eaa4a4; /* LinkedIn blue color */
+    color: white; /* Text color */
+    padding: 12px; /* Adjust padding to center the logo */
+    border-radius: 50%; /* Make the button circular */
+    display: flex; /* Use flexbox to center the content vertically and horizontally */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+    width: 40px; /* Set fixed width */
+    height: 40px; /* Set fixed height */
+    margin-right: 10px;
+}
+
+.behance-button:hover {
+    background-color: #d58f8f; /* Darker shade on hover */
+    color: white;
+}
+
+@media (max-width: 991.98px) {
+    .behance-wrapper {
+      display: none; /* Remove margin on smaller screens */
+    }
+}
+
+
 .nav-link {
   transition: transform 0.3s ease; /* Smooth transition on hover */
 }
@@ -56,3 +133,123 @@
 .nav-link:hover {
   transform: scale(1.1); /* Scale the link on hover */
 }
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+footer {
+  margin-top: auto;
+}
+
+/* ABOUT PAGE */
+
+.about-content {
+   margin-top: 100px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-content {
+  width: 50%;
+}
+
+.about-content h1 {
+  font-size: 64px;
+  margin-bottom: 10px;
+}
+
+.about-content h2 {
+  font-size: 24px;
+  color: #888;
+}
+
+.about-paragraph {
+  margin-top: 200px;
+  width: 50%;
+  padding: 0 20px;
+}
+
+.about-paragraph p {
+  font-size: 16px;
+  line-height: 2.0;
+  color: black;
+}
+
+
+/* SUBTITLE LINK STYLING */
+
+.job a
+{
+  position: relative;
+  color: #eaa4a4;
+  text-decoration: none;
+  font-weight: 600;
+
+}
+
+.job
+{
+  font-weight: 800;
+}
+
+.job a::after
+{
+  content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 1em;
+  width: 100%;
+  border-bottom: 1px solid;
+  margin-top: 10px;
+  opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(0,1);
+	transform: scale(0,1);
+}
+
+.job a:hover::after
+{
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+
+/* MIAMI GRADIENT EFFECT */
+
+.miami
+{
+  background: linear-gradient(to right, #FF6F61, #FFD166, #FF70A6, #FF6F61);
+  background-size: 200% 200%;
+  animation: rainbow 2s ease-in-out infinite;
+  background-clip: text;
+  -webkit-background-clip:text;
+  color:rgba(0,0,0,1);
+  transition: color .2s ease-in-out;
+  text-transform:uppercase;
+  font-weight:900;
+  color:rgba(0,0,0,0);
+  cursor: default;
+}
+
+/* .miami:hover
+{color:rgba(0,0,0,0);
+  cursor: default;
+  
+} */
+
+@keyframes rainbow { 
+  0%{background-position:left}
+  50%{background-position:right}
+  100%{background-position:left}
+}
+
