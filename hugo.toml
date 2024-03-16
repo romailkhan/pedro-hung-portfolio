@@ -49,13 +49,6 @@ placeholder_project_type = "Project Type"
 placeholder_about_the_project = "About the Project"
 send_message = "Send Message"
 
-# [[params.contactForm.projectType]]
-# value = "gd"
-# title = "Graphics Design"
-# [[params.contactForm.projectType]]
-# value = "wd"
-# title = "Web Design"
-
 # Navbar Action Button
 [params.navAction]
 status = true
@@ -67,6 +60,6 @@ url = "contact"
 [params.portfolio]
 enable = true
 title = "Recent Work"
-subtitle = "Transforming Ideas into Digital Art."
+subtitle = ""
 view_project = "view project"
 more_works = "MORE WORKS"
