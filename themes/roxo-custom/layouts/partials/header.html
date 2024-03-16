@@ -1,0 +1,69 @@
+<nav class="navbar navbar-expand-lg site-navigation">
+	<div class="container-fluid d-flex justify-content-between align-items-center">
+		<!-- Logo and brand -->
+		<div class="d-flex align-items-center">
+			<a class="navbar-brand" href="{{ .Site.BaseURL }}" aria-label="Pedro Hung">
+				<img src="{{ .Site.Params.logo | absURL }}" alt=""/>
+			</a>
+			<h3 class="m-0 ml-2">Pedro Hung</h3>
+		</div>
+		
+		<!-- Toggler button for collapsed navbar -->
+		<button
+			class="navbar-toggler collapsed util-focus-visible"
+			type="button"
+			data-toggle="collapse"
+			data-target="#sitenavbar"
+			aria-label="Toggle navigation"
+		>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<!-- Navigation links in the center -->
+		<div
+			class="collapse navbar-collapse justify-content-center"
+			id="sitenavbar"
+		>
+			<ul class="navbar-nav main-nav">
+				{{$menu := (.Site.Menus.nav)}} {{$len := (len $menu)}} {{ range $index,
+				$element := $menu }} {{ if eq (add $index 1) $len }}
+				<li class="nav-item">
+					<a
+						class="nav-link btn contact-button"
+						href="{{ .URL | absURL }}"
+					>
+						<span class="btn-area">
+							<span data-text="{{ .Name }}">{{ .Name }}</span>
+						</span>
+					</a>
+				</li>
+				{{ else }}
+				<li class="nav-item">
+					<a class="nav-link" href="{{ .URL | absURL }}">{{ .Name }}</a>
+				</li>
+				{{ end }} {{ end }}
+			</ul>
+		</div>
+		<!-- LinkedIn icon -->
+		<div class="linkedin-wrapper">
+			<a
+				class="nav-link linkedin-button"
+				href="https://www.linkedin.com/in/pedro-hung-platt-806568189/"
+				target="_blank"
+			>
+				<i class="fab fa-linkedin fa-lg"></i>
+			</a>
+		</div>
+
+		<!-- Behance icon -->
+		<div class="behance-wrapper">
+			<a
+				class="nav-link behance-button"
+				href="https://www.behance.net/pedrohung"
+				target="_blank"
+			>
+				<i class="fab fa-behance fa-lg"></i>
+			</a>
+	</div>
+</nav>

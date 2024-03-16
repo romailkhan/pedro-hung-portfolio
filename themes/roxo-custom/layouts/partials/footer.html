@@ -1,0 +1,25 @@
+<footer class="site-footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="site-footer-copyright">
+					<p>
+						© Copyright {{ dateFormat "2006" now }} - Made with ❤️ by
+						<a
+							href="https://github.com/romailkhan/pedro-hung-portfolio"
+							style="color: #e83e8c"
+							target="_blank"
+							>Romail Khan
+						</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- {{ $formhandler := resources.Get "js/formhandler.js" | minify }}
+<script src="{{ $formhandler.Permalink }}"></script> -->
+{{ $vendor := resources.Get "js/vendor.js" | minify }}
+<script src="{{ $vendor.Permalink }}"></script>
+{{ $script := resources.Get "js/script.js" | minify }}
+<script src="{{ $script.Permalink }}"></script>
