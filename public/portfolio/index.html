@@ -29,27 +29,29 @@
   <link rel="icon" href="http://localhost:1313/images/favicon.png" type="image/x-icon" />
 </head>
 <body><nav class="navbar navbar-expand-lg site-navigation">
-	<div class="container-fluid">
+	<div class="container-fluid d-flex justify-content-between align-items-center">
 		
-		<a class="navbar-brand" href="http://localhost:1313/">
-			<img src="http://localhost:1313/images/logo.png" alt="logo" />
-		</a>
+		<div class="d-flex align-items-center">
+			<a class="navbar-brand" href="http://localhost:1313/" aria-label="Pedro Hung">
+				<img src="http://localhost:1313/images/logo.png" alt=""/>
+			</a>
+			<h3 class="m-0 ml-2">Pedro Hung</h3>
+		</div>
+		
 		
 		<button
-			class="navbar-toggler collapsed"
+			class="navbar-toggler collapsed util-focus-visible"
 			type="button"
 			data-toggle="collapse"
 			data-target="#sitenavbar"
+			aria-label="Toggle navigation"
 		>
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 		</button>
 		
-		<div
-			class="collapse navbar-collapse justify-content-center"
-			id="sitenavbar"
-		>
+		<div class="collapse navbar-collapse justify-content-center" id="sitenavbar">
 			<ul class="navbar-nav main-nav">
 				   
 				<li class="nav-item">
@@ -61,10 +63,7 @@
 				</li>
 				  
 				<li class="nav-item">
-					<a
-						class="nav-link btn btn-sm btn-primary btn-sm-rounded"
-						href="http://localhost:1313/contact"
-					>
+					<a class="nav-link btn contact-button" href="http://localhost:1313/contact">
 						<span class="btn-area">
 							<span data-text="Get in touch">Get in touch</span>
 						</span>
@@ -121,7 +120,7 @@
 			<div class="col-lg-6 col-md-10 mx-auto">
 				<div class="site-project-item">
 					<div class="site-project-item-thumb">
-						<img src="http://localhost:1313/images/projects/timex-watch-pink.png" alt="project-thumb" />
+						<img src="http://localhost:1313/images/Timex.gif" alt="project-thumb" />
 					</div>
 					<div class="site-project-item-content">
 						<span>REBRAND</span>
@@ -136,7 +135,7 @@
 			<div class="col-lg-6 col-md-10 mx-auto">
 				<div class="site-project-item">
 					<div class="site-project-item-thumb">
-						<img src="http://localhost:1313/images/projects/blue-compass.jpg" alt="project-thumb" />
+						<img src="http://localhost:1313/images/BCRV.gif" alt="project-thumb" />
 					</div>
 					<div class="site-project-item-content">
 						<span>UI UX</span>
@@ -151,12 +150,12 @@
 			<div class="col-lg-6 col-md-10 mx-auto">
 				<div class="site-project-item">
 					<div class="site-project-item-thumb">
-						<img src="http://localhost:1313/images/projects/project-thumb-two.jpg" alt="project-thumb" />
+						<img src="http://localhost:1313/images/Froggy_Time.gif" alt="project-thumb" />
 					</div>
 					<div class="site-project-item-content">
 						<span>PRODUCT DESIGN</span>
-						<h3>OSEN CLOCK</h3>
-						<a href="http://localhost:1313/portfolio/osen-clock/" class="read-more"
+						<h3>Froggy Time</h3>
+						<a href="http://localhost:1313/portfolio/froggy-time/" class="read-more"
 							>view project</a
 						>
 					</div>
@@ -166,12 +165,12 @@
 			<div class="col-lg-6 col-md-10 mx-auto">
 				<div class="site-project-item">
 					<div class="site-project-item-thumb">
-						<img src="http://localhost:1313/images/projects/project-thumb-three.jpg" alt="project-thumb" />
+						<img src="http://localhost:1313/images/Kay.gif" alt="project-thumb" />
 					</div>
 					<div class="site-project-item-content">
-						<span>REBRAND</span>
-						<h3>SEAMLESS WATCH</h3>
-						<a href="http://localhost:1313/portfolio/seamless-watch/" class="read-more"
+						<span>PRODUCT DESIGN</span>
+						<h3>Kay Jewelers</h3>
+						<a href="http://localhost:1313/portfolio/kay-jewelers/" class="read-more"
 							>view project</a
 						>
 					</div>
@@ -209,7 +208,8 @@
 
  
         </main><footer class="site-footer">
-	<div class="container">
+	<div class="container d-flex justify-content-center align-items-center">
+		
 		<div class="row">
 			<div class="col-12">
 				<div class="site-footer-copyright">
@@ -217,10 +217,9 @@
 						© Copyright 2024 - Made with ❤️ by
 						<a
 							href="https://github.com/romailkhan/pedro-hung-portfolio"
-							style="color: #e83e8c"
 							target="_blank"
-							>Romail Khan
-						</a>
+							>Romail Khan</a
+						>
 					</p>
 				</div>
 			</div>

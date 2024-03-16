@@ -199,9 +199,9 @@ footer {
 .job a
 {
   position: relative;
-  color: #eaa4a4;
+  color: #3b3b3b;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 800;
 
 }
 
@@ -292,6 +292,7 @@ footer {
   }
 }
 
+
 .contact-button,
 .contact-submit-button {
   color: #fff; /* Text color */
@@ -340,6 +341,7 @@ footer {
 
 .site-footer-copyright a:hover {
   color: #c22e6e; /* Change link color on hover */
+  text-decoration: underline;
 }
 
 @media (max-width: 768px) {

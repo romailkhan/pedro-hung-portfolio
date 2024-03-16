@@ -1,8 +1,6 @@
 # Ignore node_modules directory
 node_modules/
 
-themes/*
-
 # Ignore IDE and editor files
 .vscode/
 .idea/
@@ -33,7 +31,6 @@ credentials.json
 public/*
 
 #Dont upload static directory
-static/*
 
 # Ignore .DS_Store files on macOS
 .DS_Store
