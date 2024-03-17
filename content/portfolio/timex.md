@@ -3,7 +3,7 @@ title: "TIMEX"
 date: 2019-12-23T20:56:42+06:00
 type: portfolio
 image: "images/Timex.gif"
-category: ["REBRAND"]
+category: ["Creative Concepting"]
 project_images: ["images/projects/timex-watch-orange.png", "images/projects/timex-fullsize.png", "images/projects/timex-gowithit.png"]
 ---
 

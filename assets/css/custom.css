@@ -372,3 +372,16 @@ footer {
 .navbar-toggler:hover .icon-bar {
   background-color: rgba(0, 0, 0, 0.8);
 }
+
+.project-category
+{
+  color: #3b3b3b !important;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 12px !important;
+}
+
+.project-title
+{
+  text-transform: uppercase;
+}
