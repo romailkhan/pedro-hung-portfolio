@@ -19,7 +19,9 @@
 						/>
 						<div class="overlay">
 							<div class="site-project-item-content">
-								<span class="project-category">{{ delimit .Params.category ", " }}</span>
+								<p class="project-category">
+									{{ delimit .Params.category ", " }}
+								</p>
 								<h3 class="project-title">{{ .Title }}</h3>
 								<a href="{{ .Permalink }}" class="read-more"
 									>{{ .Site.Params.portfolio.view_project }}
